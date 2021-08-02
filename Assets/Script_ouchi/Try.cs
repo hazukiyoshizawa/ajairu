@@ -42,22 +42,22 @@ public class Try : MonoBehaviour
     }
     public void AddLogD()
     {
-        choiceList[count] = "c";
+        choiceList[count] = "d";
         count++;
     }
     public void AddLogE()
     {
-        choiceList[count] = "d";
+        choiceList[count] = "e";
         count++;
     }
     public void AddLogF()
     {
-        choiceList[count] = "e";
+        choiceList[count] = "f";
         count++;
     }
     public void AddLogG()
     {
-        choiceList[count] = "f";
+        choiceList[count] = "g";
         count++;
     }
     public void AddLogH()
