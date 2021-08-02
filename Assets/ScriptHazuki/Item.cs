@@ -144,6 +144,22 @@ public class Item : MonoBehaviour
         //フェードアウト：http://kuromikangames.com/article/475434825.html
     }
 
+        public void OntriggerEnterMoonQuiz()
+    {
+        Debug.Log("MoonQuiz");
+        // SceneManager.LoadScene("ClearScene");
+        FadeManager.Instance.LoadScene ("MoonQuiz", 1f);
+        //フェードアウト：http://kuromikangames.com/article/475434825.html
+    }
+
+        public void OntriggerEnterMoonExperience()
+    {
+        Debug.Log("MoonExperience");
+        // SceneManager.LoadScene("ClearScene");
+        FadeManager.Instance.LoadScene ("MoonExperience", 1f);
+        //フェードアウト：http://kuromikangames.com/article/475434825.html
+    }
+
 
 
 }
