@@ -1112,7 +1112,7 @@ GameObject:
   - component: {fileID: 137288379}
   - component: {fileID: 137288378}
   m_Layer: 5
-  m_Name: Shape (1)
+  m_Name: "b\u306E\u6708"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1662,6 +1662,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1051144441}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Appear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &180979626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1863,7 +1875,7 @@ GameObject:
   - component: {fileID: 232368742}
   - component: {fileID: 232368741}
   m_Layer: 5
-  m_Name: Shape (7)
+  m_Name: "h\u306E\u6708"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2841,6 +2853,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 137288378}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Appear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &452875562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2967,7 +2991,7 @@ GameObject:
   - component: {fileID: 456730684}
   - component: {fileID: 456730683}
   m_Layer: 5
-  m_Name: Shape (0)
+  m_Name: "a\u306E\u6708"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3295,6 +3319,102 @@ MonoBehaviour:
       - m_Target: {fileID: 1927862599}
         m_TargetAssemblyTypeName: PanelChanger, Assembly-CSharp
         m_MethodName: PanelMove0_0
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 456730683}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Disappear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 137288378}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Disappear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1827642055}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Disappear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1051144441}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Disappear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2122498429}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Disappear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1739173322}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Disappear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 232368741}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Disappear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 797242026}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Disappear
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4930,7 +5050,7 @@ GameObject:
   - component: {fileID: 797242027}
   - component: {fileID: 797242026}
   m_Layer: 5
-  m_Name: Shape (3)
+  m_Name: "d\u306E\u6708"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6542,7 +6662,7 @@ GameObject:
   - component: {fileID: 1051144442}
   - component: {fileID: 1051144441}
   m_Layer: 5
-  m_Name: Shape (4)
+  m_Name: "e\u306E\u6708"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8524,7 +8644,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -316, y: 223}
+  m_AnchoredPosition: {x: -316, y: 222}
   m_SizeDelta: {x: 328, y: 272}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1331033883
@@ -8916,6 +9036,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 465165800}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Appear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 797242026}
         m_TargetAssemblyTypeName: Popup, Assembly-CSharp
         m_MethodName: Appear
         m_Mode: 1
@@ -9742,6 +9874,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 880693672}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Appear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1739173322}
         m_TargetAssemblyTypeName: Popup, Assembly-CSharp
         m_MethodName: Appear
         m_Mode: 1
@@ -11434,7 +11578,7 @@ GameObject:
   - component: {fileID: 1739173323}
   - component: {fileID: 1739173322}
   m_Layer: 5
-  m_Name: Shape (6)
+  m_Name: "g\u306E\u6708"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12267,6 +12411,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2122498429}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Appear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1813209680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12468,7 +12624,7 @@ GameObject:
   - component: {fileID: 1827642056}
   - component: {fileID: 1827642055}
   m_Layer: 5
-  m_Name: Shape (2)
+  m_Name: "c\u306E\u6708"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13874,6 +14030,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1827642055}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Appear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1980819282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14521,6 +14689,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 456730683}
+        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+        m_MethodName: Appear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2051485047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14728,7 +14908,7 @@ GameObject:
   - component: {fileID: 2122498430}
   - component: {fileID: 2122498429}
   m_Layer: 5
-  m_Name: Shape (5)
+  m_Name: "f\u306E\u6708"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
