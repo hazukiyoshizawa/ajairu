@@ -75,17 +75,17 @@ public class Lever : MonoBehaviour
         //右側の重りの位置を変更
         rightWeight.transform.position = Vector3.MoveTowards(rightWeight.transform.position, rightWeightTargetPosition, 1f);
         
-        //現在の月の親オブジェクトの移動先を取得
-        moonItemTargetPosition = GameObject.Find(moonParentName).transform.position;
-        //月の吊るす位置が変わった
-        if(moonParentName != preMoonParentName)
-        {
-            //月をその位置に瞬間移動
-            moonItem.transform.position = moonItemTargetPosition;
-        }
+        // //現在の月の親オブジェクトの移動先を取得
+        // moonItemTargetPosition = GameObject.Find(moonParentName).transform.position;
+        // //月の吊るす位置が変わった
+        // if(moonParentName != preMoonParentName)
+        // {
+        //     //月をその位置に瞬間移動
+        //     moonItem.transform.position = moonItemTargetPosition;
+        // }
 
-        //月をてこの動きに合わせて滑らかに移動
-        moonItem.transform.position = Vector3.MoveTowards(moonItem.transform.position, moonItemTargetPosition, 1f);
+        // //月をてこの動きに合わせて滑らかに移動
+        // moonItem.transform.position = Vector3.MoveTowards(moonItem.transform.position, moonItemTargetPosition, 1f);
 
     }
 }
