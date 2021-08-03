@@ -160,6 +160,12 @@ public class Item : MonoBehaviour
         //フェードアウト：http://kuromikangames.com/article/475434825.html
     }
 
-
+    public void OntriggerEnterLeverTest()
+    {
+        Debug.Log("LeverTest");
+        // SceneManager.LoadScene("ClearScene");
+        FadeManager.Instance.LoadScene("LeverTest", 1f);
+        //フェードアウト：http://kuromikangames.com/article/475434825.html
+    }
 
 }
