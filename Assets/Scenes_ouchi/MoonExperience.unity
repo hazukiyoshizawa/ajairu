@@ -1389,7 +1389,6 @@ GameObject:
   - component: {fileID: 1120935337}
   - component: {fileID: 1120935336}
   - component: {fileID: 1120935335}
-  - component: {fileID: 1120935339}
   m_Layer: 5
   m_Name: IncreaseButton
   m_TagString: Untagged
@@ -1426,9 +1425,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1120935333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dbb8837188eae6439a195f6df0d09fa, type: 3}
+  m_Script: {fileID: 11500000, guid: e0ba0d68345974941867478a68c392fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  phase: 0
 --- !u!114 &1120935336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1446,7 +1446,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1120935339}
+        - m_Target: {fileID: 1120935335}
           m_TargetAssemblyTypeName: ButtonHoldDown, Assembly-CSharp
           m_MethodName: OnButtonDown
           m_Mode: 1
@@ -1462,7 +1462,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1120935339}
+        - m_Target: {fileID: 1120935335}
           m_TargetAssemblyTypeName: ButtonHoldDown, Assembly-CSharp
           m_MethodName: OnButtonUp
           m_Mode: 1
@@ -1512,19 +1512,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120935333}
   m_CullTransparentMesh: 1
---- !u!114 &1120935339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120935333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d34d498f69fba94cb54919d817be2fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  phase: 0
 --- !u!1 &1140159149
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,7 +2254,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1549047609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 774203f5192077145a67204f3c2dee74, type: 3}
+  m_Script: {fileID: 11500000, guid: 3eb6716850a17164ab5a7f7f09678453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 250
