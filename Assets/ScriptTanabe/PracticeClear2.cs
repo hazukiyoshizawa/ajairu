@@ -30,7 +30,7 @@ public class PracticeClear2 : MonoBehaviour
         //一定フレーム数の間、てこが水平になっている=問題をクリアしている
         if(clearFrame > 30 && !isFaded){
             //次の画面に遷移
-            FadeManager.Instance.LoadScene ("TecoQuiz", 1f);
+            FadeManager.Instance.LoadScene ("TecoQuiz2", 1f);
 
             isFaded = true;
         }
