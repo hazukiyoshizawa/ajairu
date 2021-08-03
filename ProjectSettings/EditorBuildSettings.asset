@@ -20,9 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ScenesHazuki/NotTeco.unity
     guid: d14198f765fbad141817362229731cd7
-  - enabled: 1
-    path: Assets/ScenesHazuki/Moon.unity
-    guid: e30ac14b99285614cbc3ebb2e17e5b34
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/ScenesHazuki/TecoHint.unity
     guid: 2cdd5c6a9c0be5946a15d4c4416d6c06
@@ -71,7 +71,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ScenesTanabe/TecoQuiz2.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes_fukura/LeverTest.unity
+    guid: 7fe0bfc6fa49a7744a482279aa307532
   - enabled: 0
     path: 
-    guid: 0e6357482183fe0459659eafedd68542
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
