@@ -7,6 +7,9 @@ public class DragObj : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
 
     public Transform parentTransform;
     
+    //ドラッグ開始時の座標
+    public Vector3 startPosition;
+
     //ドラッグ開始時に呼ばれるメソッド//
     public void OnBeginDrag(PointerEventData data){
         //ドラッグ開始時にコンソールに表示//
@@ -18,8 +21,11 @@ public class DragObj : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         //現在の親オブジェクトの情報をparentTransformに格納//
         parentTransform = transform.parent;
 
+        //ドラッグ開始時の座標を取得
+        startPosition = transform.position;
+
         //親オブジェクトをもう一つ上の親に変換//
-        transform.SetParent(transform.parent.parent);
+        // transform.SetParent(transform.parent.parent);
 
     }
 
@@ -33,14 +39,27 @@ public class DragObj : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         data_3D = Vector3 pos = transform.position;
         pos = data_3D;*/
         
-        Vector3 data_3D = Camera.main.WorldToScreenPoint((Vector3)data.delta);
-        transform.localPosition = data_3D;
-
         //オブジェクトの位置にカーソルの位置情報を代入//
         // transform.position = data.position;
         // Debug.Log((Vector3)data.delta);
         // transform.position += Vector3.Scale(new Vector3(0.2f, 0.2f, 0.2f), (Vector3)data.delta);
         
+        //カメラから見た月のワールド座標をスクリーン座標に変換して取得
+        Vector3 objectPoint
+            = Camera.main.WorldToScreenPoint(transform.position);
+ 
+        //Cubeの現在位置(マウス位置)を、pointScreenに格納
+        Vector3 pointScreen
+            = new Vector3(Input.mousePosition.x,
+                          Input.mousePosition.y,
+                          objectPoint.z);
+        
+        //Cubeの現在位置を、スクリーン座標からワールド座標に変換して、pointWorldに格納
+        Vector3 pointWorld = Camera.main.ScreenToWorldPoint(pointScreen);
+        pointWorld.z = transform.position.z;
+        
+        //Cubeの位置を、pointWorldにする
+        transform.position = pointWorld;
     }
 
     //ドラッグ終了時に呼ばれるメソッド//
@@ -48,6 +67,10 @@ public class DragObj : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
         //ドラッグ終了時にコンソールに表示//
         Debug.Log("OnEndDrag");
 
+        //ドラッグ終了時に開始時の座標に設定
+        //※正しくPanelオブジェクトにドラッグされていない場合は、ここで元の位置に戻す
+        transform.position = startPosition;
+        
         //現在の親オブジェクトの情報をparentTransformに格納//
         transform.SetParent(parentTransform);
         
