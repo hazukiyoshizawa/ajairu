@@ -12,9 +12,6 @@ public class RunDog : MonoBehaviour
     //てこのオブジェクト
     GameObject lever;
 
-    //画面遷移済みフラグ
-    bool isFaded;
-    
     private void Start()
     {   
         //犬の開始時座標
@@ -23,8 +20,6 @@ public class RunDog : MonoBehaviour
         targetPosition = GameObject.Find("DogGoal").transform.position;
         //てこのオブジェクトを取得
         lever = GameObject.Find("Lever");
-        //画面遷移済みフラグをfalseに設定
-        isFaded = false;
     }
 
     void Update()
@@ -32,7 +27,7 @@ public class RunDog : MonoBehaviour
         //てこのz方向角度が水平なら犬を移動させる(オイラー角取得時に誤差があるため、-1~1の間の角度を水平とする)
         if(-1 <= lever.transform.localEulerAngles.z && lever.transform.localEulerAngles.z <= 1){
             transform.position = 
-            Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 40);
+            Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 10);
         } else{
             //水平でない場合
             if(transform.position != targetPosition){
@@ -41,16 +36,11 @@ public class RunDog : MonoBehaviour
             }
         }
 
-        //まだ画面遷移していない
-        if(!isFaded){
-            //犬がゴール地点に到達した
-            if(transform.position == targetPosition){
-                isFaded = true;
+        if(transform.position == targetPosition){
                 Debug.Log("TecoGood");
-                // SceneManager.LoadScene("ClearScene");
-                FadeManager.Instance.LoadScene ("TecoGood", 1f);
-                //フェードアウト：http://kuromikangames.com/article/475434825.html
+        // SceneManager.LoadScene("ClearScene");
+        FadeManager.Instance.LoadScene ("TecoGood", 1f);
+        //フェードアウト：http://kuromikangames.com/article/475434825.html
             }
-        }
     }
 }
