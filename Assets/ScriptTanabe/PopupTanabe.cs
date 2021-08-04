@@ -29,4 +29,8 @@ public class PopupTanabe : MonoBehaviour
         Debug.Log(count);
     }
 
+    public void FadeTecoGood()
+    {
+        FadeManager.Instance.LoadScene("TecoGood", 1f);
+    }
 }
