@@ -650,7 +650,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbffb982f1653dd4cba8d81fb66ba169, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.04
+  m_Volume: 0.388
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2271,7 +2271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u592A\u967D\u3068\u6708\u306E"
+  m_Text: "\u6708\u3068\u592A\u967D\u306E"
 --- !u!222 &303561470
 CanvasRenderer:
   m_ObjectHideFlags: 0
