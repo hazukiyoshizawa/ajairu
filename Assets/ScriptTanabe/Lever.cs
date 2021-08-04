@@ -57,7 +57,7 @@ public class Lever : MonoBehaviour
                 targetZ = 400f; 
                 break;
             default:
-                targetZ = 310f;
+                targetZ = 320f;
                 break;
         }
         //てこオブジェクトのオイラー角を取得
