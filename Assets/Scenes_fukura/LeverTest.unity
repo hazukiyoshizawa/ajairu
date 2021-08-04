@@ -1533,7 +1533,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 102601745}
         m_TargetAssemblyTypeName: Item, Assembly-CSharp
-        m_MethodName: OntriggerEnterSearch3
+        m_MethodName: OntriggerEnterTecoEnding
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
