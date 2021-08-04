@@ -144,6 +144,14 @@ public class Item : MonoBehaviour
         //フェードアウト：http://kuromikangames.com/article/475434825.html
     }
 
+        public void OntriggerEnterPractice02Lever()
+    {
+        Debug.Log("Practice02Lever");
+        // SceneManager.LoadScene("ClearScene");
+        FadeManager.Instance.LoadScene ("Practice02Lever", 1f);
+        //フェードアウト：http://kuromikangames.com/article/475434825.html
+    }
+
         public void OntriggerEnterMoonQuiz()
     {
         Debug.Log("MoonQuiz");
@@ -151,6 +159,15 @@ public class Item : MonoBehaviour
         FadeManager.Instance.LoadScene ("MoonQuiz", 1f);
         //フェードアウト：http://kuromikangames.com/article/475434825.html
     }
+
+        public void OntriggerEnterTecoQuiz2()
+    {
+        Debug.Log("TecoQuiz2");
+        // SceneManager.LoadScene("ClearScene");
+        FadeManager.Instance.LoadScene ("TecoQuiz2", 1f);
+        //フェードアウト：http://kuromikangames.com/article/475434825.html
+    }
+
 
         public void OntriggerEnterMoonExperience()
     {
@@ -165,6 +182,14 @@ public class Item : MonoBehaviour
         Debug.Log("LeverTest");
         // SceneManager.LoadScene("ClearScene");
         FadeManager.Instance.LoadScene("LeverTest", 1f);
+        //フェードアウト：http://kuromikangames.com/article/475434825.html
+    }
+
+    public void OntriggerEnterTecoEnding()
+    {
+        Debug.Log("TecoEnding");
+        // SceneManager.LoadScene("ClearScene");
+        FadeManager.Instance.LoadScene("TecoEnding", 1f);
         //フェードアウト：http://kuromikangames.com/article/475434825.html
     }
 
