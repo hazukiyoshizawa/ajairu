@@ -64,7 +64,7 @@ public class FadeManager : MonoBehaviour
 			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), Texture2D.whiteTexture);
 		}
 
-		if (this.DebugMode) {
+		if (!this.DebugMode) {
 			if (!this.isFading) {
 				//Scene一覧を作成 .
 				//(UnityEditor名前空間を使わないと自動取得できなかったので決めうちで作成) .
