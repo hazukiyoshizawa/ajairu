@@ -11,9 +11,12 @@ public class RunDog : MonoBehaviour
     Vector3 targetPosition;
     //てこのオブジェクト
     GameObject lever;
-
+    //シーン開始時に取得しているオブジェクトへの参照用変数
+    public SceneStart sceneStart;
     //画面遷移済みフラグ
     bool isFaded;
+    //
+    AudioSource audioSource;
     
     private void Start()
     {   
@@ -25,12 +28,17 @@ public class RunDog : MonoBehaviour
         lever = GameObject.Find("Lever");
         //画面遷移済みフラグをfalseに設定
         isFaded = false;
+        //シーン開始時に取得したオブジェクト一覧を取得
+        sceneStart = GameObject.Find("TecoQuiz").GetComponent<SceneStart>();
+        //このオブジェクトに設定されているAudioを取得
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
         //てこのz方向角度が水平なら犬を移動させる(オイラー角取得時に誤差があるため、-1~1の間の角度を水平とする)
         if(-1 <= lever.transform.localEulerAngles.z && lever.transform.localEulerAngles.z <= 1){
+            // audioSource.Play();
             transform.position = 
             Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 40);
         } else{
@@ -38,6 +46,7 @@ public class RunDog : MonoBehaviour
             if(transform.position != targetPosition){
                 //左側に渡りきっていなければ戻す
                 transform.position = startPosition;
+                // audioSource.Stop();
             }
         }
 
@@ -46,10 +55,8 @@ public class RunDog : MonoBehaviour
             //犬がゴール地点に到達した
             if(transform.position == targetPosition){
                 isFaded = true;
-                Debug.Log("TecoGood");
-                // SceneManager.LoadScene("ClearScene");
-                FadeManager.Instance.LoadScene ("TecoGood", 1f);
-                //フェードアウト：http://kuromikangames.com/article/475434825.html
+                Debug.Log(sceneStart);
+                sceneStart.clearParts.SetActive(true);
             }
         }
     }
