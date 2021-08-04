@@ -2940,7 +2940,7 @@ RectTransform:
   m_LocalScale: {x: -0.30002984, y: 0.9300198, z: 0.99998915}
   m_Children: []
   m_Father: {fileID: 1881983871}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 179.16, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3165,7 +3165,7 @@ Transform:
   - {fileID: 5389764}
   - {fileID: 266455643}
   m_Father: {fileID: 1881983871}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1500266524
 MonoBehaviour:
@@ -3367,7 +3367,7 @@ RectTransform:
   - {fileID: 173519777}
   - {fileID: 196759788}
   m_Father: {fileID: 1881983871}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3894,7 +3894,7 @@ GameObject:
   - component: {fileID: 1881983873}
   - component: {fileID: 1881983872}
   - component: {fileID: 1881983874}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TecoQuiz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3912,10 +3912,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1500266523}
-  - {fileID: 1584242268}
-  - {fileID: 1810945251}
   - {fileID: 1414500171}
+  - {fileID: 1500266523}
+  - {fileID: 1810945251}
+  - {fileID: 1584242268}
   m_Father: {fileID: 840950074}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
