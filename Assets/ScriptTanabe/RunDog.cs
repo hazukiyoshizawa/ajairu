@@ -29,7 +29,7 @@ public class RunDog : MonoBehaviour
         //画面遷移済みフラグをfalseに設定
         isFaded = false;
         //シーン開始時に取得したオブジェクト一覧を取得
-        sceneStart = GameObject.Find("TecoQuiz").GetComponent<SceneStart>();
+        sceneStart = GameObject.Find("Canvas").GetComponent<SceneStart>();
         //このオブジェクトに設定されているAudioを取得
         audioSource = GetComponent<AudioSource>();
     }
@@ -38,7 +38,10 @@ public class RunDog : MonoBehaviour
     {
         //てこのz方向角度が水平なら犬を移動させる(オイラー角取得時に誤差があるため、-1~1の間の角度を水平とする)
         if(-1 <= lever.transform.localEulerAngles.z && lever.transform.localEulerAngles.z <= 1){
-            // audioSource.Play();
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
             transform.position = 
             Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 40);
         } else{
@@ -56,6 +59,7 @@ public class RunDog : MonoBehaviour
             if(transform.position == targetPosition){
                 isFaded = true;
                 Debug.Log(sceneStart);
+                sceneStart.mainParts.SetActive(false);
                 sceneStart.clearParts.SetActive(true);
             }
         }
