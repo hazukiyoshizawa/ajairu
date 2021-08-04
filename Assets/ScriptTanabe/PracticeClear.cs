@@ -30,7 +30,7 @@ public class PracticeClear : MonoBehaviour
         //一定フレーム数の間、てこが水平になっている=問題をクリアしている
         if(clearFrame > 30 && !isFaded){
             //次の画面に遷移
-            FadeManager.Instance.LoadScene ("Practice02Lever", 1f);
+            FadeManager.Instance.LoadScene ("Practice01Clear", 1f);
 
             isFaded = true;
         }
