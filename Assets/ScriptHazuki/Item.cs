@@ -97,6 +97,15 @@ public class Item : MonoBehaviour
         //フェードアウト：http://kuromikangames.com/article/475434825.html
     }
 
+        public void OntriggerEnterTecoHint3()
+    {
+        i = 1;
+        Debug.Log("TecoHint3");
+        // SceneManager.LoadScene("ClearScene");
+        FadeManager.Instance.LoadScene ("TecoHint3", 1f);
+        //フェードアウト：http://kuromikangames.com/article/475434825.html
+    }
+
         public void OntriggerEnterTecoStart()
     {
         if(i==1){
