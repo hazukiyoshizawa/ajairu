@@ -6,12 +6,12 @@ public class PracticeClear2 : MonoBehaviour
 {
     //てこのオブジェクト
     GameObject lever;
-
     //てこが水平になっている間のフレーム数
     int clearFrame;
-
     //画面遷移済みフラグ
     bool isFaded;
+    //クリア時に表示する次へボタン
+    GameObject nextButton;
 
     private void Start()
     {   
@@ -23,14 +23,20 @@ public class PracticeClear2 : MonoBehaviour
 
         //画面遷移済みフラグをfalseに設定
         isFaded = false;
+
+        //次へボタンのオブジェクトを取得
+        nextButton = GameObject.Find("NextButton");
+
+        //次へボタンを非表示に
+        nextButton.SetActive(false);
     }
 
     void Update()
     {
         //一定フレーム数の間、てこが水平になっている=問題をクリアしている
         if(clearFrame > 10 && !isFaded){
-            //次の画面に遷移
-            FadeManager.Instance.LoadScene ("Practice02Clear", 1f);
+            //次へボタンを表示
+            nextButton.SetActive(true);
 
             isFaded = true;
         }
