@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 15238108}
   - component: {fileID: 15238107}
   - component: {fileID: 15238106}
+  - component: {fileID: 15238109}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -159,8 +160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258, y: 66.53}
-  m_SizeDelta: {x: 91, y: 82}
+  m_AnchoredPosition: {x: 256, y: -215}
+  m_SizeDelta: {x: 61, y: 63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15238106
 MonoBehaviour:
@@ -256,6 +257,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15238104}
   m_CullTransparentMesh: 1
+--- !u!114 &15238109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15238104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164339677de37c447bd7164b6f3c5ad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &70128526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2488,7 +2502,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7406\u79D1\u5BA4\u306B\u304B\u3048\u3063\u3066\u304D\u305F\u3088\uFF01\n\u3044\u308D\u3044\u308D\u30BF\u30C3\u30D7\u3057\u3066\u8131\u51FA\u306E\u624B\u304C\u304B\u308A\u3092\n\u63A2\u305D\u3046\uFF01"
+  m_Text: "\u7406\u79D1\u5BA4\u306B\u304B\u3048\u3063\u3066\u304D\u305F\u3088\uFF01\n\u3044\u308D\u3044\u308D\u30BF\u30C3\u30D7\u3057\u3066\u3060\u3063\u3057\u3085\u3064\u306E\n\u624B\u304C\u304B\u308A\u3092\u63A2\u305D\u3046\uFF01"
 --- !u!222 &1940345964
 CanvasRenderer:
   m_ObjectHideFlags: 0
