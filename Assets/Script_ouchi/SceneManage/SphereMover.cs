@@ -25,6 +25,10 @@ public class SphereMover : MonoBehaviour
     GameObject image_objectF;
     GameObject image_objectG;
     GameObject image_objectH;
+    GameObject image_objectI;
+    GameObject image_objectJ;
+    GameObject image_objectK;
+    GameObject image_objectL;
     GameObject ObjectButton;
 
     ButtonHoldDown buttonHoldDown;
@@ -45,6 +49,10 @@ public class SphereMover : MonoBehaviour
         image_objectF = GameObject.Find("ShapeF");
         image_objectG = GameObject.Find("ShapeG");
         image_objectH = GameObject.Find("ShapeH");
+        image_objectI = GameObject.Find("ShapeI");
+        image_objectJ = GameObject.Find("ShapeJ");
+        image_objectK = GameObject.Find("ShapeK");
+        image_objectL = GameObject.Find("ShapeL");
 
         ObjectButton = GameObject.Find("IncreaseButton");
         buttonHoldDown = ObjectButton.GetComponent<ButtonHoldDown>();
@@ -69,25 +77,7 @@ public class SphereMover : MonoBehaviour
         }
 
         //à»â∫ñûÇøåáÇØï\é¶èåè
-        if (phase < 0.394 || phase > 5.906)
-        {
-            image_objectG.SetActive(true);
-        }
-        else
-        {
-            image_objectG.SetActive(false);
-        }
-
-        if (0.394 < phase && phase < 1.181)
-        {
-            image_objectH.SetActive(true);
-        }
-        else
-        {
-            image_objectH.SetActive(false);
-        }
-
-        if (1.181 < phase && phase < 1.969)
+        if (phase < 0.2625 || phase > 6.0375)
         {
             image_objectA.SetActive(true);
         }
@@ -96,7 +86,7 @@ public class SphereMover : MonoBehaviour
             image_objectA.SetActive(false);
         }
 
-        if (1.969 < phase && phase < 2.756)
+        if (0.2625 < phase && phase < 0.7875)
         {
             image_objectB.SetActive(true);
         }
@@ -105,7 +95,7 @@ public class SphereMover : MonoBehaviour
             image_objectB.SetActive(false);
         }
 
-        if (2.756 < phase && phase < 3.544)
+        if (0.7875 < phase && phase < 1.3125)
         {
             image_objectC.SetActive(true);
         }
@@ -114,7 +104,7 @@ public class SphereMover : MonoBehaviour
             image_objectC.SetActive(false);
         }
 
-        if (3.544 < phase && phase < 4.331)
+        if (1.3125 < phase && phase < 1.8375)
         {
             image_objectD.SetActive(true);
         }
@@ -123,7 +113,7 @@ public class SphereMover : MonoBehaviour
             image_objectD.SetActive(false);
         }
 
-        if (4.331 < phase && phase < 5.119)
+        if (1.8375 < phase && phase < 2.3625)
         {
             image_objectE.SetActive(true);
         }
@@ -132,13 +122,67 @@ public class SphereMover : MonoBehaviour
             image_objectE.SetActive(false);
         }
 
-        if (5.119 < phase && phase < 5.906)
+        if (2.3625 < phase && phase < 2.8875)
         {
             image_objectF.SetActive(true);
         }
         else
         {
             image_objectF.SetActive(false);
+        }
+
+        if (2.8875 < phase && phase < 3.4125)
+        {
+            image_objectG.SetActive(true);
+        }
+        else
+        {
+            image_objectG.SetActive(false);
+        }
+
+        if (3.4125 < phase && phase < 3.9375)
+        {
+            image_objectH.SetActive(true);
+        }
+        else
+        {
+            image_objectH.SetActive(false);
+        }
+
+        if (3.9375 < phase && phase < 4.4625)
+        {
+            image_objectI.SetActive(true);
+        }
+        else
+        {
+            image_objectI.SetActive(false);
+        }
+
+        if (4.4625 < phase && phase < 4.9875)
+        {
+            image_objectJ.SetActive(true);
+        }
+        else
+        {
+            image_objectJ.SetActive(false);
+        }
+
+        if (4.9875 < phase && phase < 5.5125)
+        {
+            image_objectK.SetActive(true);
+        }
+        else
+        {
+            image_objectK.SetActive(false);
+        }
+
+        if (5.5125 < phase && phase < 6.0375)
+        {
+            image_objectL.SetActive(true);
+        }
+        else
+        {
+            image_objectL.SetActive(false);
         }
 
     }
