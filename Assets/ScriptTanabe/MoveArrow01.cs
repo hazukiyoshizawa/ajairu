@@ -34,6 +34,11 @@ public class MoveArrow01 : MonoBehaviour
             {
                 // 移動回数をインクリメント
                 moveCount++;
+                if(moveCount >= maxMoveCount)
+                {
+                    // 矢印を非表示
+                    this.gameObject.SetActive(false);
+                }
                 // 矢印を初期位置に戻す
                 transform.position = arrowStart;
             } else {
@@ -41,8 +46,7 @@ public class MoveArrow01 : MonoBehaviour
                 transform.position = 
                 Vector3.MoveTowards(transform.position, arrowGoal, Time.deltaTime * 20);
             }
-        } else { //指定回数動いた
-            this.gameObject.SetActive(false);
         }
+         
     }
 }
