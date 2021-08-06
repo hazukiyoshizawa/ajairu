@@ -38,13 +38,17 @@ public class RunDog : MonoBehaviour
     {
         //てこのz方向角度が水平なら犬を移動させる(オイラー角取得時に誤差があるため、-1~1の間の角度を水平とする)
         if(-1 <= lever.transform.localEulerAngles.z && lever.transform.localEulerAngles.z <= 1){
-            if (!audioSource.isPlaying)
+            if (!audioSource.isPlaying && !isFaded)
             {
                 audioSource.Play();
             }
             transform.position = 
             Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 40);
         } else{
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
             //水平でない場合
             if(transform.position != targetPosition){
                 //左側に渡りきっていなければ戻す
@@ -58,6 +62,10 @@ public class RunDog : MonoBehaviour
             //犬がゴール地点に到達した
             if(transform.position == targetPosition){
                 isFaded = true;
+                if (audioSource.isPlaying)
+                {
+                    audioSource.Stop();
+                }
                 Debug.Log(sceneStart);
                 sceneStart.mainParts.SetActive(false);
                 sceneStart.clearParts.SetActive(true);
