@@ -42,4 +42,5 @@ public class PanelChangerJunpei : MonoBehaviour
     {
         transform.localPosition = new Vector2(-2000, 2000);
     }
+
 }
