@@ -28,8 +28,8 @@ public class SphereRotate : MonoBehaviour
     void Update()
     {
         phase = buttonHoldDown.phase;
-        transform.Rotate(new Vector3(0, 0, phase));
-
+        //transform.Rotate(new Vector3(0, 0, phase));
+        transform.rotation = Quaternion.Euler(0, 0, phase / 6.3f * 360f);
 
     }
 }
