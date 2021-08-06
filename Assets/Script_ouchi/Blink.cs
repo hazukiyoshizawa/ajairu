@@ -23,7 +23,7 @@ public class Blink : MonoBehaviour
 
     void Start()
     {
-        //ƒAƒ^ƒbƒ`‚µ‚Ä‚éƒIƒuƒWƒFƒNƒg‚ğ”»•Ê
+        //ï¿½Aï¿½^ï¿½bï¿½`ï¿½ï¿½ï¿½Ä‚ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ğ”»•ï¿½
         if (this.gameObject.GetComponent<Image>())
         {
             thisObjType = ObjType.IMAGE;
@@ -38,7 +38,7 @@ public class Blink : MonoBehaviour
 
     void Update()
     {
-        //ƒIƒuƒWƒFƒNƒg‚ÌAlpha’l‚ğXV
+        //ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½Alphaï¿½lï¿½ï¿½ï¿½Xï¿½V
         if (thisObjType == ObjType.IMAGE)
         {
             image.color = GetAlphaColor(image.color);
@@ -49,11 +49,11 @@ public class Blink : MonoBehaviour
         }
     }
 
-    //Alpha’l‚ğXV‚µ‚ÄColor‚ğ•Ô‚·
+    //Alphaï¿½lï¿½ï¿½ï¿½Xï¿½Vï¿½ï¿½ï¿½ï¿½Colorï¿½ï¿½Ô‚ï¿½
     Color GetAlphaColor(Color color)
     {
-        time += Time.deltaTime * 5.0f * speed;
-        color.a = Mathf.Sin(time) * 0.5f + 0.5f;
+        time += Time.deltaTime * 2.0f * speed;
+        color.a = Mathf.Sin(time) * 0.5f + 0.75f;
 
         return color;
     }
