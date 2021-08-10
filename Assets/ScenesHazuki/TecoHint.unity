@@ -377,8 +377,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 277.03, y: -204.6}
-  m_SizeDelta: {x: 91, y: 82}
+  m_AnchoredPosition: {x: 256, y: -215}
+  m_SizeDelta: {x: 61, y: 63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &321188025
 MonoBehaviour:
@@ -493,7 +493,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321188023}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ab69a1d98acfb5546b25f456094aca54, type: 3}
@@ -708,8 +708,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 277.03, y: -204.6}
-  m_SizeDelta: {x: 91, y: 82}
+  m_AnchoredPosition: {x: 256, y: -215}
+  m_SizeDelta: {x: 61, y: 63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &665236369
 MonoBehaviour:
@@ -2178,7 +2178,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u3068\u3044\u3046\u3053\u3068\u306F\n\u6708\u306E\u91CD\u3055=\u8D64\u3044\u304A\u3082\u308A2\u500B\u5206\u306A\u306E\u304B\uFF01\n\u3053\u308C\u306F\u899A\u3048\u3066\u304A\u3044\u305F\u65B9\u304C\u3044\u3044\u304B\u3082\uFF01\uFF01"
+  m_Text: "\u3068\u3044\u3046\u3053\u3068\u306F\n\u6708\u306E\u91CD\u3055=\u8D64\u3044\u304A\u3082\u308A2\u500B\u5206\u306A\u306E\u304B\uFF01\n\u3053\u308C\u306F\u899A\u3048\u3066\u304A\u3044\u305F\u65B9\u304C\u3044\u3044\u304B\u3082!"
 --- !u!222 &1926626394
 CanvasRenderer:
   m_ObjectHideFlags: 0
