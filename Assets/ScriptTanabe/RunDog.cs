@@ -13,9 +13,11 @@ public class RunDog : MonoBehaviour
     GameObject lever;
     //シーン開始時に取得しているオブジェクトへの参照用変数
     public SceneStart sceneStart;
+    //月の重りのオブジェクト
+    GameObject moonItem;
     //画面遷移済みフラグ
     bool isFaded;
-    //
+    //音楽再生用オブジェクト
     AudioSource audioSource;
     
     private void Start()
@@ -30,6 +32,8 @@ public class RunDog : MonoBehaviour
         isFaded = false;
         //シーン開始時に取得したオブジェクト一覧を取得
         sceneStart = GameObject.Find("Canvas").GetComponent<SceneStart>();
+        //月の重りのオブジェクトを取得
+        moonItem = GameObject.Find("MoonItem");
         //このオブジェクトに設定されているAudioを取得
         audioSource = GetComponent<AudioSource>();
     }
@@ -66,8 +70,9 @@ public class RunDog : MonoBehaviour
                 {
                     audioSource.Stop();
                 }
+                moonItem.SetActive(false);
                 Debug.Log(sceneStart);
-                sceneStart.mainParts.SetActive(false);
+                sceneStart.tutorialParts.SetActive(false);
                 sceneStart.clearParts.SetActive(true);
             }
         }
