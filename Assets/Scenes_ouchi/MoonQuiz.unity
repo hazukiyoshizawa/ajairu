@@ -4917,9 +4917,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
-        m_MethodName: Disappear
+      - m_Target: {fileID: 1289752549}
+        m_TargetAssemblyTypeName: PopupFukura, Assembly-CSharp
+        m_MethodName: Appear
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4929,8 +4929,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Popup, Assembly-CSharp
+      - m_Target: {fileID: 367992704}
+        m_TargetAssemblyTypeName: PopupFukura, Assembly-CSharp
         m_MethodName: Disappear
         m_Mode: 1
         m_Arguments:
@@ -6710,7 +6710,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 100b3cd741b3a4b48a83e1ed626af08d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bc6869ea4971e14591feb06bdcb1e55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
