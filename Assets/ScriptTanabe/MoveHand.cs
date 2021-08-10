@@ -25,10 +25,12 @@ public class MoveHand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        float sin = Mathf.Sin(Time.time * 2) * 40.0f;
-        
+//        float sin = System.Math.Min(Mathf.Sin(Time.time * 2) * 40.0f - 0.5f , 1) *2;
+        float sin = System.Math.Min((-1)*Mathf.Sin(Time.time * 2) * 40.0f - 0.75f, 1) * 2;
+
         this.transform.localPosition = new Vector3(handStart.x, handStart.y - sin, handStart.z);
         
+
         // //指定回数動いていないとき
         // if(moveCount < maxMoveCount)
         // {
