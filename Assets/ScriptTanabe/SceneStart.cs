@@ -7,6 +7,8 @@ public class SceneStart : MonoBehaviour
 {
     public GameObject mainParts;
 
+    public GameObject tutorialParts;
+
     public GameObject introductionParts;
 
     public GameObject clearParts;
