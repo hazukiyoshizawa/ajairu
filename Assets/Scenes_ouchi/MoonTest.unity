@@ -5275,7 +5275,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u7A74\u57CB\u3081\u554F\u984C\uFF01"
+  m_Text: "\u7A74\u3046\u3081\u554F\u984C\uFF01"
 --- !u!222 &618166372
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6611,7 +6611,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745363249}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -7022,7 +7022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73.590576, y: -191.02}
+  m_AnchoredPosition: {x: 73.590576, y: -210.9}
   m_SizeDelta: {x: 602.0975, y: 146.5219}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &797989217
@@ -7058,7 +7058,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u6708\u304F\u3093\u304C\u77E2\u5370\u306E\u4F4D\u7F6E\u306B\u3044\u308B\u3068\u304D\u306B\u3001\n\u79C1\u304B\u3089\u306F\u3069\u3046\u898B\u3048\u308B\uFF1F\n\u30A2\u304B\u3089\u30A8\u306E\u8A18\u53F7\u306E\u3046\u3061\n\u6B63\u89E3\u3060\u3068\u601D\u3046\u3082\u306E\u3092\u30BF\u30C3\u30D7\u3057\u3066\u306D\uFF01"
+  m_Text: "\u3053\u306E\u3068\u304D\u6708\u304F\u3093\u306F\u79C1\u304B\u3089\u3069\u3046\u898B\u3048\u308B\uFF1F\n\u30A2\u304B\u3089\u30A8\u306E\u8A18\u53F7\u306E\u3046\u3061\n\u6B63\u89E3\u3060\u3068\u601D\u3046\u3082\u306E\u3092\u30BF\u30C3\u30D7\u3057\u3066\u306D\uFF01"
 --- !u!222 &797989218
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11543,7 +11543,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267112887}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -15426,7 +15426,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585276405}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -16162,7 +16162,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711663156}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -17424,7 +17424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: 98}
+  m_AnchoredPosition: {x: -1, y: 98}
   m_SizeDelta: {x: 571, y: 517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1801961569
@@ -18405,7 +18405,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 88, y: 216}
+  m_AnchoredPosition: {x: 2, y: 207}
   m_SizeDelta: {x: 281.6, y: 64.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1873583290
@@ -18430,16 +18430,16 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5c43ff6dee6fc9442b11a7d7e908d5ce, type: 3}
-    m_FontSize: 50
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 50
+    m_MaxSize: 75
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\u30AF\u30EA\u30A2\uFF01\uFF01"
 --- !u!222 &1873583291
@@ -19237,7 +19237,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u6708\u306E\u304A\u3082\u308A\nGet!!!"
+  m_Text: 
 --- !u!222 &1971288118
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20138,7 +20138,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7A7A\u3089\u3093\u3092\u30BF\u30C3\u30D7\u3057\u3066\n\u6B63\u3057\u3044\u9078\u629E\u80A2\u3092\u9078\u3093\u3067\u306D"
+  m_Text: "\u7A7A\u3089\u3093\u3092\u30BF\u30C3\u30D7\u3057\u3066\n\u6B63\u3057\u3044\u8A00\u8449\u3092\u9078\u3093\u3067\u306D"
 --- !u!222 &2010788066
 CanvasRenderer:
   m_ObjectHideFlags: 0
