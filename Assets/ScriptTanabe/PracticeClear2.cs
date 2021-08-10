@@ -12,6 +12,8 @@ public class PracticeClear2 : MonoBehaviour
     bool isFaded;
     //クリア時に表示する次へボタン
     GameObject nextButton;
+    //音楽再生用オブジェクト
+    AudioSource audioSource;
 
     private void Start()
     {   
@@ -29,12 +31,18 @@ public class PracticeClear2 : MonoBehaviour
 
         //次へボタンを非表示に
         nextButton.SetActive(false);
+
+        //このオブジェクトに設定されているAudioを取得
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
         //一定フレーム数の間、てこが水平になっている=問題をクリアしている
         if(clearFrame > 10 && !isFaded){
+            //クリア音楽再生
+            audioSource.Play();
+            
             //次へボタンを表示
             nextButton.SetActive(true);
 
